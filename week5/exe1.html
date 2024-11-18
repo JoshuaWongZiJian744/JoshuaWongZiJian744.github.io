@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        week5 Exercise 1: Navigation Bar
+
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        header {
+            background-color: #fff4dc;
+            justify-content: left;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            margin-right: 20px;
+            font-size: 25px;
+        }
+
+        .nav {
+            display: flex;
+            color: black;
+            padding: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            margin-right: 20px;
+            padding-top: 0px;
+        }
+
+
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .nav2 {
+            display: flex;
+            color: black;
+            padding: 10px;
+
+            margin-left: 700px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .nav2 a:hover {
+            text-decoration: underline;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo in the navbar -->
+        <div class="logo">
+            <p>
+                BREW
+            </p>
+        </div>
+
+        <div class="nav">
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Location& Hours</a>
+        </div>
+        <div class="nav2">
+            <div id="logo2">
+                <a href="image/login.png"></a>
+                <a href="image/login-icon.jpg"><img src="image/login-icon.jpg" alt="Log In" width="30"></a>
+            </div>
+            <a href="#">Log In</a>
+            <a href="#">Cart(0)</a>
+        </div>
+
+        <button>
+            Order Online
+        </button>
+
+    </header>
+</body>
+
+</html>

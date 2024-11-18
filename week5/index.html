@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> two colomn layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .column {
+            /* Creates equal-width for all columns */
+            flex: 1;
+            padding: 10px;
+        }
+
+        .column1 {
+            background-color: red;
+        }
+
+        .column2 {
+            /* double size width for this column */
+            flex: 2;
+            background-color: blue;
+        }
+
+        .container2 {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .column3 {
+            /* double size width for this column */
+            flex: 2;
+            background-color: red;
+        }
+
+        .column4 {
+            flex: 1;
+            background-color: blue;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="container">
+        <div class="column column1">
+            <h2>Column 1</h2>
+            <p>This is the first column.</p>
+        </div>
+
+        <div class="column column2">
+            <h2>Column 2</h2>
+            <p>This is the second column.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="column column3">
+            <h2>Column 1</h2>
+            <p>This is the first column.</p>
+        </div>
+
+        <div class="column column4">
+            <h2>Column 2</h2>
+            <p>This is the second column.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
