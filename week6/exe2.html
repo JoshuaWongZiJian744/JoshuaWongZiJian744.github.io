@@ -2,8 +2,19 @@
 <html>
 
 <head>
-    <title>exe 1 week6</title>
+    <title>exe2 week5</title>
     <style>
+        @media screen and (max-width: 600px) {
+            .navbar {
+                align-content: center;
+                flex-direction: column;
+            }
+
+            .icon {
+                visibility: hidden;
+            }
+        }
+
         header {
             background-color: #333333;
             height: 80px;
@@ -14,14 +25,14 @@
         .logo {
             display: block;
             height: 60px;
-            margin-right: auto;
-            padding: 10px;
 
         }
 
         .navbar {
+            position: sticky;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         div {
@@ -40,6 +51,7 @@
         a {
             color: white;
             text-decoration: none;
+            text-align: center;
         }
 
         .submenu {
@@ -66,9 +78,12 @@
         }
 
         .arrow {
-            height: 15px;
-            left: 50px;
+            height: 10px;
+        }
 
+        .icon {
+            height: 15px;
+            align-items: center;
         }
     </style>
 </head>
@@ -76,10 +91,12 @@
 <body>
     <header>
         <div class="navbar">
-            <div><img src="image/logo-01.png" class="logo"></div>
+            <div><img src="image/logo2.png" logo height="50"></div>
             <div class="menu">
+                <img src="image/home png.png" class="icon">
                 <a href="#">Home</a>
                 <div class="menu-item">
+                    <img src="image/info.png" class="icon">
                     <a href="#">About</a>
                     <img src="image/arrow down.webp" class="arrow">
                     <div class="submenu">
@@ -88,6 +105,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
+                    <img src="image/setting.png" class="icon">
                     <a href="#">Services</a>
                     <img src="image/arrow down.webp" class="arrow">
                     <div class="submenu">
@@ -96,6 +114,7 @@
                         <a href="#">SEO Services</a>
                     </div>
                 </div>
+                <img src="image/phone.png" class="icon" height="100">
                 <a href="#">Contact</a>
             </div>
         </div>
