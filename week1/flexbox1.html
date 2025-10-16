@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title> Exe1 week1 </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+
+    
+
+     body {
+            background-color: rgb(247, 244, 238);
+        }
+
+    
+   h1{
+     font-family: "Archivo", sans-serif;
+     font-size: 50px;
+     margin-bottom: 10px;
+   }
+
+   h2{
+    font-family: "Archivo", sans-serif;
+    font-size:28px;
+   }
+
+
+   h4{
+    font-family: "Archivo", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: -10px;
+   }
+
+   .first{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    text-align: center;
+   
+    
+   }
+
+   .flex-container{
+     display: flex;
+     justify-content: center;
+        gap: 30px;   
+   }
+
+   .box{
+     
+        background-color: white;
+        width: 24%;
+        border: 10px ;
+        border-radius: 15px;
+        padding: 20px;
+        
+   }
+
+   .textbox{
+       text-align: left;
+       padding-left: 18px;
+      
+   }
+
+   .img{
+        border-radius: 10px 10px 10px 10px;
+        
+   }
+   
+    p {
+        font-family: "Oxygen", sans-serif;
+        color: rgb(112, 112, 112);
+        line-height: 25px;
+
+    }
+
+    @media (max-width: 700px) {
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .box{
+        width: 80%;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    h1{
+        font-size: 33px;}
+    }
+   
+
+    @media (max-width: 400px) {
+
+        .first{
+            margin: 10px;
+            }
+        
+        p {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        h4{
+         font-size: 11px;
+         margin-bottom: 10px;
+        }
+
+        h1{
+            font-size: 35px;
+            margin-top: 5px;}
+        }
+    
+  </style>
+
+
+</head>
+ <body>
+    <div class="all">
+     <div class="first">
+      <h4>BUILDING A BETTER FUTURE</h4>
+      <h1>We construct & deliver quality projects</h1>
+      <p>Meet our customers and explore their success stories with us</p>
+     </div>
+    
+     <div class="flex-container">
+
+        <div class="box">
+            <img src="img1.jpg" alt="Residential projects" class="img" width="100%">
+                <div class="textbox"><h2>Residential projects</h2>
+                <p>We build sustainble and modern homes for comfortable living.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img2.jpg" alt="Commercial spaces" class="img" width="100%">
+                <div class="textbox"><h2>Commercial spaces</h2>
+                    <p>We create efficiet,inspiring workspaces for businesses of all sizes.</p>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="img3.jpg" alt="Infrastructure works" class="img" width="100%">
+                <div class="textbox"><h2>Infrastructure works</h2>
+                     <p>We develop strong,reliable infrastructure for growing communities.</p>
+                </div>
+       </div>  
+     </div>
+    </div>
+    
+ </body>
+</html>
+
