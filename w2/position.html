@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title> Exe2 week1 </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <style>
+
+        /*navbar styles*/
+        body {
+                background-color: rgb(247, 244, 238);
+                margin: 0;
+               
+                
+            }
+    
+
+        h4{
+            font-family: "Oxygen", sans-serif;
+            line-height: 25px;
+            font-size: 15px;
+            cursor: pointer; /* makes text feel clickable */
+            transition: color 0.3s ease; /* smooth color transition */
+        }
+        
+
+        .allnavbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            
+        }
+    
+        .logo{
+            width: 12%;
+            margin-left: 50px;
+        }
+    
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+         .container h4:hover {
+            color: orangered;
+        }
+
+    
+        .contact {
+            display: flex;
+            justify-content: end;
+             gap: 25px;
+             margin-right: 50px;
+        }
+
+        .icon{
+            width: 28px;
+            margin-top: 20px;
+        }
+        
+    
+        .contactbutton{
+            background-color: orangered;
+            color: white;
+            border-radius: 9px;
+            border: none;
+            padding: 14px 17px ;
+            margin: auto;
+            cursor: pointer;
+            
+            
+        }
+
+        .menuicon {
+            display: none;
+        }
+
+        /*content styles*/
+
+        .allcontent{
+           padding-left: 20px;
+           padding-right: 20px;
+          position: relative;
+                
+
+           
+        }
+
+        .bgimg-text{
+           background-image: url(backgroundw2); 
+           background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;  
+            padding: 10px;
+            border-radius: 16px;
+            height: 100vh;/*占满一整页的高度*/
+           
+        }
+
+        .contenttext{
+          max-width: 650px;/*限制内容最大宽度，不超过600px*/
+         padding-left: 40px;
+        
+        }
+
+        h1{
+              font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 80px;
+            color: white;
+            line-height: 1;
+            margin-bottom: 20px;
+           
+        }
+
+        p{
+            font-family: "Oxygen", sans-serif;
+            font-size: 20px;
+            color: white;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            
+        }
+
+        .qrbutton{
+            background-color: #FBE46A;
+            border: none;
+            border-radius: 9px;
+            padding: 15px 30px;
+            font-size: 15px;
+        }
+
+        .opbutton{
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 9px;
+            padding: 15px 30px;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+       
+        .contentbox{
+            
+            bottom: -50px; /* 将盒子部分放置在背景图片外部 */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+           
+            position: absolute;
+            
+        }
+
+        .box1, .box2, .box3, .box4{
+              background-color: white;
+            border-radius: 12px;
+            padding: 25px 20px;
+            width: 200px;
+           
+        }
+
+
+
+   
+        @media (max-width: 1200px) {
+
+            .logo {
+                width: 15%;
+               
+            }
+            .container {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }   
+    
+            .menuicon {
+                display: block;
+                width: 25px;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            
+            .all{
+               padding: 15px;
+            }
+
+            .logo {
+                width: 35%;
+                margin-left: 10px;
+            }
+
+            h4{
+                display: none;
+            }
+
+            .icon {
+                display: none;
+            }
+            
+            .contact {
+                
+                margin-right: 10px;
+            }
+            .menuicon{
+               width: 28px;
+                margin-top: 0px;
+            }
+        }
+    
+
+   
+  </style>
+
+
+</head>
+ <body>
+   <div class="allnavbar">
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="100%">
+        </div>
+        <div class="container">
+            <h4>Home</h4>
+            <h4>Services</h4>
+            <h4>Work</h4>
+            <h4>Project Details</h4>
+            <h4>Contact</h4>
+        </div>
+
+        <div class="contact">
+            <div class="icon">
+            <img src="phoneicon.jpg" alt="call" width="100%">
+            </div>
+            
+            <h4>555-123-4567</h4>
+            <button class="contactbutton">Contact</button>
+            
+            <div class="menuicon">
+                <img src="menuicon.jpg" alt="mn" width="100%">
+            </div>
+        </div>
+   </div>
+   <div class="allcontent">
+
+        <div class="bgimg-text">
+            
+            <div class="contenttext">
+            <h1>MODERN FOUNDATIONS</h1>
+            <p>
+                Your trusted partner for cutting-edge foundation construction.We deliver robust and reliable solutions tailored to your project’s needs
+            </p>
+            <button class="qrbutton">Quote Request</button>
+            <button class="opbutton">Our Portfolio</button>
+            </div>
+
+            <div class="contentbox">
+                <div class="box1">
+                    <h2>50+</h2>
+                    <h3>Multi-Story Projects</h3>
+                </div>
+                <div class="box2">
+                    <h2>174</h2>
+                    <h3>Residential Designs</h3>
+                </div>
+                <div class="box3">
+                    <h2>21</h2>
+                    <h3>Years in Business</h3>
+                </div>
+                <div class="box4">
+                    <h2>360+</h2>
+                    <h3>Renovation Success</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+   </div>
+
+ </body>
+</html>
+
