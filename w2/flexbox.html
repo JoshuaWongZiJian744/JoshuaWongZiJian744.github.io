@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+    <title> Exe2 week2 </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  
+    <style>
+
+        body{
+            background-color:#4b0d17 ;
+            margin: 0;
+        }
+
+        .all{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .member{
+             flex: 1;
+            max-width: 280px;
+            margin-bottom: 30px;
+        }
+        .name{
+           font-family: 'Lora', sans-serif;
+            font-style: normal;
+            color: #D17070;
+            font-size: 25px;
+            font-weight: normal;
+            margin-bottom: 5px;
+           
+        }
+
+        .position{
+            color: #FCD9D9;
+            font-family: 'Prompt', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 15px;
+        }
+
+       
+        .img{
+            width: 100%;
+            margin: 15px 0;
+        }
+        
+        .pic img{
+            width: 100%;
+            filter: grayscale(100%) brightness(100%) contrast(90%);
+            transition: filter 0.5s ease;
+        }
+
+
+        .pic img:hover {
+            filter: none;
+        }
+
+
+       .line{
+           width: 100%;
+            height: 1px;
+            background-color: #D17070;
+            margin: 10px 0 10px;
+        }
+
+        /* 错落效果 */
+        .member:nth-child(1) {
+            transform: translateY(0);/*第一个成员：正常位置*/
+        }
+        
+        .member:nth-child(2) {
+            transform: translateY(60px);/*第二个成员：向下移动60px*/
+        }
+        
+        .member:nth-child(3) {
+            transform: translateY(120px);/*第三个成员：向下移动120px*/
+        }
+        
+        .member:nth-child(4) {
+            transform: translateY(180px);/*第四个成员：向下移动180px*/
+        }
+    
+     @media (max-width: 1200px) {
+            .all {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+            
+            .member {
+                flex: 0 0 calc(50% - 15px); /* 每行两个，减去间距的一半 */
+                transform: translateY(0) !important;
+               
+            }
+        }
+
+     @media (max-width: 600px) {
+            .member {
+                flex: 0 0 100%;
+            }
+           
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="all">
+            <div class="member">
+                <p class="name">JOSEPH BARNES</p>
+                <div class="line"></div>
+
+                <div class="pic">
+                    <img src="about_img1 exe2.jpg" alt="Joseph Barnes">
+                </div>
+
+                <p class="position">Manager</p>
+
+            </div>
+            <div class="member">
+                <p class="name">EARL WOOD</p>
+                <div class="line"></div>
+
+                <div class="pic">
+                    <img src="about_img2exe2.jpg" alt="Bartender">
+                </div>
+
+                <p class="position">Bartender</p>
+            </div>
+
+            <div class="member">
+                    <p class="name">BOBBY JOHNSON</p>
+                    <div class="line"></div>
+
+                    <div class="pic">
+                        <img src="about_img3exe2.jpg" alt="Bobby Johnson">
+                    </div>
+                    <p class="position">Bartender</p>
+            </div>
+            <div class="member">
+                <p class="name">JANE MORGAN</p>
+                <div class="line"></div>
+
+                <div class="pic">
+                    <img src="about_img4exe2.jpg" alt="Jane Morgan">
+                </div>
+                <p class="position">Bartender</p>
+            </div>
+        </div>
+
+    </body>
+</html>
